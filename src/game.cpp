@@ -7,7 +7,7 @@
 #include "images/enemy_RGB565_BE.h"
 #include "images/player_RGB565_BE.h"
 #include "images/background_RGB565_BE.h"
-#include "images/LcdFont_RGB565_BE.h"
+#include "images/lcdFont_RGB565_BE.h"
 #include "framebuffer.h"
 
 void DrawGame(void)

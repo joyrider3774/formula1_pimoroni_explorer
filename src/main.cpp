@@ -12,6 +12,7 @@
 #include "intro.h"
 #include "glcdfont.h"
 #include "mixedtones.h"
+#include "savestate.h"
 
 using namespace pimoroni;
 
@@ -123,6 +124,7 @@ int main() {
     fb.width = WINDOW_WIDTH;
     fb.buffer = (uint16_t*)graphics->frame_buffer;
     initSound();
+	loadSaveState();
     gameState = gsInitIntro;
     currentTime = time_us_32();
     lastTime = 0;
